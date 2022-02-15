@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     width: 100vw;
+    color: white;
     position: relative;
 }
 
@@ -18,6 +19,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #74777c;
 }
 
 /* Header - Premium */
@@ -29,6 +31,24 @@ header {
     top: 0px;
     right: 0px;
     z-index: 21;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#premium-button {
+    height: 40px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#premium-button a {
+    color: white;
+    font-weight: 600;
 }
 
 /* Nav and Profile */
@@ -51,6 +71,7 @@ main {
     top: 0px;
     right: 0px;
     z-index: 5;
+    padding-top: 100px;
 }
 /* Player - Footer */
 footer {
