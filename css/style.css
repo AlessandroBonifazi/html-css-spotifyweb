@@ -22,10 +22,15 @@ a {
     color: #74777c;
 }
 
+ /* Utilities */
+ .flex {
+     display: flex;
+ }
+
 /* Header - Premium */
 header {
     height: 100px;
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0px;
@@ -34,13 +39,12 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
 }
 
 #premium-button {
     height: 40px;
     width: 200px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px;
     margin-right: 15px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -51,10 +55,10 @@ header {
     font-weight: 600;
 }
 
-/* Nav and Profile */
-.left-nav {
+/* Profile-Section and Main-Nav */
+.profile-section {
     height: calc(100% - 100px);
-    width: 200px;
+    width: 250px;
     background-color: black;
     position: absolute;
     left: 0px;
@@ -62,10 +66,59 @@ header {
     z-index: 10;
 }
 
+.profile-section a {
+    font-weight: 600;
+}
+
+.logo {
+    width: 70%;
+    margin: 30px 15px;
+}
+
+.main-nav {
+    margin-bottom: 25px;
+}
+
+.nav-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.profile-section li {
+    height: 35px;
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#active {
+    border-left: 3px solid #adff2f;
+    padding-left: 12px;
+}
+
+#active a {
+    color: white;
+}
+
+.profile-section li:hover a {
+    color: white;
+    cursor: pointer;
+}
+
+.profile-section h4 {
+    margin: 15px;
+    font-weight: 700;
+}
+
+.fa-plus-square {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
 /* Main */
 main {
     height: calc(100% - 100px);
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     background-color: #141922;
     position: absolute;
     top: 0px;
@@ -73,6 +126,7 @@ main {
     z-index: 5;
     padding-top: 100px;
 }
+
 /* Player - Footer */
 footer {
     height: 100px;
