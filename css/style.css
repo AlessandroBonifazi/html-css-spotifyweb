@@ -1,5 +1,23 @@
+/* Generics */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav and Profile */
+.left-nav {
+    
 }
