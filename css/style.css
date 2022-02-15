@@ -20,11 +20,15 @@ ul {
 a {
     text-decoration: none;
     color: #74777c;
-}
+}}
 
  /* Utilities */
  .flex {
      display: flex;
+ }
+
+ .grey {
+    color: #74777c;
  }
 
 /* Header - Premium */
@@ -80,7 +84,7 @@ header {
 }
 
 .nav-icon {
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 10px;
 }
 
@@ -88,7 +92,7 @@ header {
     height: 35px;
     width: 100%;
     padding-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 #active {
@@ -106,13 +110,45 @@ header {
 }
 
 .profile-section h4 {
-    margin: 15px;
     font-weight: 700;
+    display: inline-block;
+}
+
+.profile-section>h4 {
+    margin: 15px;
 }
 
 .fa-plus-square {
     font-size: 40px;
     margin-right: 10px;
+}
+
+.profile {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 10px;
+
+}
+
+.profile hr {
+    margin: 10px;
+    width: calc(100% - 20px);
+    color: #74777c;
+}
+
+.profile i {
+    margin-left: 15px;
+}
+
+.new-pl {
+    margin: 0px 0px 10px 15px;
+}
+
+.new-pl:hover *{
+    color: white;
+    cursor: pointer;
 }
 
 /* Main */
