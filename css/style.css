@@ -203,3 +203,71 @@ footer {
     margin: 5px;
 }
 /* player */
+.player {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.player-icon {
+    color: white;
+    font-size: 18px;
+    margin: 0px 8px;
+}
+
+#play {
+    font-size: 33px;
+    margin: 0px 10px;
+}
+
+.song-time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-time span {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.song-bar {
+    height: 5px;
+    width: calc(100% - 150px);
+    background-color: #74777c;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+/* more-controls */
+.more-controls {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-icon {
+    color: white;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.volume-bar {
+    height: 5px;
+    width: 35%;
+    background-color: #74777c;
+    border-radius: 4px;
+    display: inline-block;
+}
