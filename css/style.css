@@ -79,6 +79,10 @@ header {
     margin: 30px 15px;
 }
 
+.logo-small {
+    display: none;
+}
+
 .main-nav {
     margin-bottom: 25px;
 }
@@ -111,7 +115,6 @@ header {
 
 .profile-section h4 {
     font-weight: 700;
-    display: inline-block;
 }
 
 .profile-section>h4 {
@@ -129,7 +132,16 @@ header {
     bottom: 0px;
     left: 0px;
     margin-bottom: 10px;
+}
 
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container i {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .profile hr {
@@ -347,18 +359,67 @@ footer {
  @media screen and (max-width: 639px) {
     article {
         min-width: 45%;
-       
     }
 
     article h3 {
         font-size: 15px;
     }
 
-    .article-wrapper {
-        margin: auto;
-    }
-
     .main-header a {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    article {
+        min-width: 45%;
+    }
+
+    article h3 {
+        font-size: 15px;
+    }
+
+    .main-nav span {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+        width: 25px;
+        margin: 15px;
+    }
+
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55px;
+    }
+
+    header, main {
+        width: calc(100vw - 55px);
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+    }
+
+    .profile i {
+        margin-left: 0px;
+    }
+
+    .profile>i {
+        margin-bottom: 15px;
+    }
+}   

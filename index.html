@@ -25,22 +25,30 @@
 
     <!-- Profile-Section and Main-Nav  -->
     <aside class="profile-section">
-        <div class="logo"><img src="img/logo.svg" alt="logo-normal-size"></div>
+        <div class="logo"><img src="img/logo.svg" alt="logo-normal"></div>
+        <div class="logo-small"><img src="img/logo-small.svg" alt="logo-small"></div>
 
         <nav class="main-nav">
             <ul>
-                <li id="active"><a href="#"><i class="fas nav-icon fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fas nav-icon fa-search"></i> Cerca</a></li>
-                <li><a href="#"><i class="fas nav-icon fa-stream"></i> La tua libreria</a></li>
+                <li id="active">
+                    <a href="#"><i class="fas nav-icon fa-home"></i><span>Home</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas nav-icon fa-search"></i><span>Cerca</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas nav-icon fa-stream"></i><span>La tua libreria</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
-        <h4>PLAYLIST</h4>
-        <div class="new-pl">
+        <h4 class="phone">PLAYLIST</h4>
+        <div class="new-pl phone">
             <i class="fas fa-plus-square grey"></i>
             <a href="#">Crea Playlist</a>
         </div>
-        <ul>
+        <ul class="phone">
             <li><a href="#">Nome Playlist</a></li>
             <li><a href="#">Nome Playlist</a></li>
             <li><a href="#">Nome Playlist</a></li>
@@ -52,10 +60,12 @@
 
         <div class="profile">
             <i class="far fa-arrow-alt-circle-down grey"></i>
-            <a href="#">Installa app</a>
-            <hr>
-            <i class="fas fa-user-circle nav-icon"></i>
-            <h4>John Doe</h4>
+            <a class="phone" href="#">Installa app</a>
+            <hr class="phone">
+            <div class="container">
+                <i class="fas fa-user-circle"></i>
+                <h4 class="phone">John Doe</h4>
+            </div>
         </div>
     </aside>
 
