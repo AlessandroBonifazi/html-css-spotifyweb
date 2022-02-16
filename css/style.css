@@ -59,6 +59,11 @@ header {
     font-weight: 600;
 }
 
+#premium-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* Profile-Section and Main-Nav */
 .profile-section {
     height: calc(100vh - 100px);
@@ -170,6 +175,10 @@ header {
     cursor: pointer;
 }
 
+.profile a:hover {
+    color: white;
+}
+
 /* Main */
 main {
     height: calc(100vh - 100px);
@@ -269,7 +278,7 @@ footer {
 }
 
 .artist-song {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .artist-song span {
@@ -278,9 +287,18 @@ footer {
     font-weight: 600;
 }
 
+.artist-song h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .fa-heart,.fa-folder {
     font-size: 1.2rem;
     margin: 5px;
+}
+
+.fa-heart:hover,.fa-folder:hover {
+    color: white;
 }
 
 /* player */
@@ -304,6 +322,9 @@ footer {
     margin: 0px 8px;
 }
 
+.player-icon:hover {
+    transform: scale(1.1);
+}
 #play {
     font-size: 33px;
     margin: 0px 10px;
@@ -358,6 +379,28 @@ footer {
     width: 30%;
     background-color: white;
     border-radius: 4px;
+    position: relative;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    display: none;
+}
+
+.song-time:hover .circle, .volume-bar:hover .circle {
+    display: inline;
+    cursor: pointer;
+}
+
+.song-time:hover .hover, .volume-bar:hover .hover {
+    background-color: #adff2f;
+    cursor: pointer;
 }
 
  /* Media Query */
@@ -426,5 +469,9 @@ footer {
 
     .profile>i {
         margin-bottom: 15px;
+    }
+
+    .artist-song {
+        margin-right: 20px;
     }
 }   
