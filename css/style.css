@@ -197,6 +197,21 @@ main span {
     font-weight: 600;
     font-size: 14px;
 }
+
+/* Scrollbar */
+main::-webkit-scrollbar {
+    width: 13px;              
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: black;    
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background-color: #74777c;   
+    border-radius: 5px;       
+  }
+  
 /* main-header-nav */
 .main-header {
     width: 100%;
