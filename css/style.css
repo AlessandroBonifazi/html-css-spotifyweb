@@ -20,7 +20,7 @@ ul {
 a {
     text-decoration: none;
     color: #74777c;
-}}
+}
 
  /* Utilities */
  .flex {
@@ -61,7 +61,7 @@ header {
 
 /* Profile-Section and Main-Nav */
 .profile-section {
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     width: 250px;
     background-color: black;
     position: absolute;
@@ -144,6 +144,8 @@ header {
 
 .new-pl {
     margin: 0px 0px 10px 15px;
+    display: flex; 
+    align-items: center;
 }
 
 .new-pl:hover *{
@@ -153,8 +155,8 @@ header {
 
 /* Main */
 main {
-    height: calc(100% - 100px);
-    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+    width: calc(100vw - 250px);
     background-color: #141922;
     position: absolute;
     top: 0px;
@@ -172,4 +174,32 @@ footer {
     bottom: 0px;
     left: 0px;
     z-index: 20;
+    display: flex;
+    justify-content: space-between;
 }
+/* now-playing */
+.now-playing {
+    display: flex;
+    align-items: center;
+
+}
+.now-playing img {
+    height: 45px;
+    margin: 0px 15px;
+}
+
+.artist-song {
+    margin-right: 50px;
+}
+
+.artist-song span {
+    color: #74777c;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.fa-heart,.fa-folder {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+/* player */
