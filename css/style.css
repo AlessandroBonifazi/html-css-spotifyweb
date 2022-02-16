@@ -143,7 +143,7 @@ header {
 }
 
 .new-pl {
-    margin: 0px 0px 10px 15px;
+    margin: 0px 0px 20px 15px;
     display: flex; 
     align-items: center;
 }
@@ -163,6 +163,25 @@ main {
     right: 0px;
     z-index: 5;
     padding-top: 100px;
+}
+
+.main-header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header a {
+    margin: 0px 5px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.main-header a:hover {
+    color: white;
+    border-bottom: 2px solid #adff2f;
 }
 
 /* Player - Footer */
@@ -270,4 +289,11 @@ footer {
     background-color: #74777c;
     border-radius: 4px;
     display: inline-block;
+}
+
+.hover {
+    height: 5px;
+    width: 30%;
+    background-color: white;
+    border-radius: 4px;
 }
