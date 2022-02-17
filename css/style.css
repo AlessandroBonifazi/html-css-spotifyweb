@@ -52,9 +52,6 @@ header {
     border-radius: 25px;
     margin-right: 21px;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-#premium-button a {
     color: white;
     font-weight: 600;
 }
@@ -200,7 +197,7 @@ main span {
 
 /* Scrollbar */
 main::-webkit-scrollbar {
-    width: 13px;              
+    width: 12px;              
   }
   
   main::-webkit-scrollbar-track {
@@ -257,15 +254,52 @@ article {
     flex-direction: column;
     align-items: center;
     margin: 2%;
+    position: relative; 
+}
+
+article h3 {
+    text-align: center;
+    margin-top: 15px;
 }
 
 article img {
+    height: auto;
     width: 100%;
-    margin-bottom: 15px;
 }
 
 .round-pic {
     border-radius: 50%;
+}
+
+.frame {
+    width: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 30px;
+    color: white;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* Player - Footer */
