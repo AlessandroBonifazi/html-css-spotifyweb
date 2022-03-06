@@ -1,4 +1,4 @@
-/* Generics */
+/* General */
 * {
     margin: 0px;
     padding: 0px;
@@ -7,10 +7,22 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    width: 100vw;
     color: white;
-    position: relative;
+}
+
+.big-wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: calc(100% - 250px);
+    background-color: #141922;
 }
 
 ul {
@@ -21,6 +33,20 @@ a {
     text-decoration: none;
     color: #74777c;
 }
+
+/* Scrollbar */
+.wrapper::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  .wrapper::-webkit-scrollbar-track {
+    background: black;    
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: #74777c;   
+    border-radius: 5px;       
+  }
 
  /* Utilities */
  .flex {
@@ -34,12 +60,8 @@ a {
 /* Header - Premium */
 header {
     height: 100px;
-    width: calc(100% - 250px);
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 21;
+    width: 100%;
+    background-color: #080b12;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -66,10 +88,8 @@ header {
     height: calc(100vh - 100px);
     width: 250px;
     background-color: black;
-    position: absolute;
-    left: 0px;
-    top: 0px;
     z-index: 10;
+    position: relative;
 }
 
 .profile-section a {
@@ -130,10 +150,10 @@ header {
 
 .profile {
     width: 100%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
     margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .container {
@@ -178,15 +198,8 @@ header {
 
 /* Main */
 main {
-    height: calc(100vh - 100px);
-    width: calc(100vw - 250px);
-    background-color: #141922;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 5;
-    padding-top: 120px;
-    overflow-y: scroll;
+    height: calc(100vh - 200px);
+    padding-top: 20px;
 }
 
 main span {
@@ -194,20 +207,6 @@ main span {
     font-weight: 600;
     font-size: 14px;
 }
-
-/* Scrollbar */
-main::-webkit-scrollbar {
-    width: 12px;              
-  }
-  
-  main::-webkit-scrollbar-track {
-    background: black;    
-  }
-  
-  main::-webkit-scrollbar-thumb {
-    background-color: #74777c;   
-    border-radius: 5px;       
-  }
   
 /* main-header-nav */
 .main-header {
@@ -254,7 +253,6 @@ article {
     flex-direction: column;
     align-items: center;
     margin: 2%;
-    position: relative; 
 }
 
 article h3 {
@@ -307,9 +305,6 @@ footer {
     height: 100px;
     width: 100%;
     background-color: #282828;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
     z-index: 20;
     display: flex;
     justify-content: space-between;
@@ -318,7 +313,6 @@ footer {
 .now-playing {
     display: flex;
     align-items: center;
-
 }
 
 .now-playing img {
@@ -501,7 +495,7 @@ footer {
         width: 55px;
     }
 
-    header, main {
+    .wrapper {
         width: calc(100vw - 55px);
     }
 
